@@ -1,0 +1,149 @@
+:root{
+  /* --------------------Colores */
+  /* --purple-color: #B71FDE; */
+  --purple-color: #890ABF;
+  --orange-color: #FC8C06;
+  --navy-color: #100126;
+  --darkp-color: #881070;
+
+/* -----------------------------------Tipografias */
+  --tipogf: 'Comfortaa';
+  --tipogf-body: 'Open Sans Condensed', sans-serif;
+}
+
+
+
+@media screen and (max-width: 768px){
+  .logo img{
+    display: none;
+  }
+  .header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo2 img{
+    display: inherit;
+    width: 90px;
+    position: relative;
+    z-index: 1;
+    top: 20px;
+    outline: none;
+    margin-left: -80px;
+  }
+  
+  .js img{
+    width: auto;
+    height: auto;
+  }
+  .portfolio{
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+
+  }
+  .about{
+    flex-flow: column;
+  }
+  .aboutDescription{
+    font-size: 22px;
+    padding: 10px 25px;
+  }
+  .imageAbout img{
+    width: 400px;
+    height: 400px;
+  }
+  
+
+  .experiments{
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 60px;
+  }
+
+  .footer{
+    flex-flow: column;
+  }
+  .contacto{
+    text-align: center;
+    padding: 15px 0;
+    margin: 10px 0;
+  }
+  .social{
+    padding: 15px 0;
+  }
+  .social-link.twitter{
+  background-image: url("https://i.imgur.com/Vo4wHML.png");
+  }
+  .social-link.facebook{
+    background-image: url("https://i.imgur.com/SI2P7xL.png");
+  }
+  .social-link.github{
+    background-image: url("https://i.imgur.com/qRxIrk5.png");
+  }
+  .social-link.instagram{
+    background-image: url("https://i.imgur.com/dY34Csu.png");
+  }
+}
+
+@media screen and (max-width: 480px){
+  .hero h1{
+    font-size: 35px;
+    margin-left: -75px;
+  }
+  .title-portfolio{
+    padding-left: 0;
+    margin: 350px 40px 50px 40px;
+  }
+  .portfolio{
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0;
+  }
+  .imageAbout img{
+    width: 100%;
+    height: auto;
+  }
+  .carousel-item__details{
+    bottom: 143px;
+  }
+  .about{
+    margin: 0;
+    padding: 0;
+  }
+  .aboutDescription{
+    font-size: 18px;
+    padding: 10px 20px;
+
+  }
+  .experiments{
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 30px;
+  }
+
+}
+
+@media screen and (max-width: 320px){
+  .hero h1{
+    font-size: .8em;
+  }
+  .js img{
+    height: 80%;
+  }
+  .title-portfolio{
+    margin: 220px 40px 50px 40px;
+  }
+  .portfolio{
+    margin: 0;
+  }
+  .poem{
+    font-size: 12px;
+    padding: 0 30px;
+  }
+  .aboutDescription{
+    font-size: 16px;
+    padding: 10px 14px;
+  }
+  .social-link {
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+  }
+}
